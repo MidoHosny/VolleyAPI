@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewImage">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nameView"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/likeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#B33D3D3D"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Like: 78"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
